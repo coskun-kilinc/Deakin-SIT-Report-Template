@@ -1,0 +1,64 @@
+\documentclass[11pt,a4paper]{sitshonours}
+
+%%%-----PACKAGES------------------
+\usepackage{graphicx}
+\usepackage[colorlinks=true,
+linkcolor=black,citecolor=black]{hyperref}
+\graphicspath{ {Figures/}} %% Path to your Figure folder
+
+
+%% Include the details of your project below.
+
+\title{Project Title}
+\author{Josh Kilinc}
+\id{221222882}
+\date{\today}
+\unit{Unit ID - Unit Name}
+\course{Bachelor of Computer Science (Honours) S406}
+
+
+%-------------DOCUMENT BEGIN-------------------
+\begin{document}
+\maketitle
+%========= Title Page
+
+%-----------Abstract----------
+\newpage
+\thispagestyle{plain}
+\pagenumbering{roman}
+
+%---------Table of Content, Figures and Tables--------
+\newpage
+\begin{singlespacing}
+    \tableofcontents
+\end{singlespacing}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{2.0}
+
+% Main body of Thesis
+%========= Start of Thesis 
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\onehalfspacing
+
+%%-------SECTIONS
+%%------ Include files for each section
+\include{01_summary}
+\include{02_reflection}
+
+% New section for the quiz results image
+\section{Quiz Results}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../quiz.png}
+    \caption{Quiz Results}
+    \label{fig:quiz_results}
+\end{figure}
+%-------- Bibliography
+\newpage
+\singlespacing
+\bibliography{references} %%All bibtex references are in references.bib file
+\bibliographystyle{siam}
+\end{document}
+%-------------DOCUMENT END-------------------
