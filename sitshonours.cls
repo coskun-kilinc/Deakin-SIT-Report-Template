@@ -17,6 +17,7 @@
 		\let\footnotesize\small
 		\let\footnoterule\relax
 		\let \footnote \thanks
+		\noindent\centering\includegraphics[width=0.25\textwidth]{Deakin_Logo}
 		\null\vfil
 		\vskip 60\p@
 		\begin{center}%
